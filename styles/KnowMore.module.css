@@ -1,0 +1,21 @@
+.KnowMore {
+  color: rgb(29, 29, 29);
+
+  padding: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.KnowMore h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.KnowMore p {
+  max-width: 50%;
+  display: block;
+  margin: 1rem auto;
+}

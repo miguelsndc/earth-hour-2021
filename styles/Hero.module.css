@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../public/earth.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+  padding: 5rem;
+}
+
+.info {
+  z-index: 2;
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 4rem;
+  animation: fadein 0.8s;
+}
+
+.info p {
+  display: block;
+
+  max-width: 60%;
+
+  margin: 0 auto;
+  margin-top: 0.75rem;
+
+  font-size: 1.25rem;
+
+  animation: fadein 1s;
+}
+
+.info button {
+  border: 0;
+  outline: 0;
+
+  border-radius: 4px;
+
+  width: 12rem;
+  height: 3.5rem;
+  margin-top: 1.75rem;
+
+  background: #026acc;
+
+  transition: background 0.2s ease-in-out;
+
+  color: white;
+  font-weight: 600;
+  animation: fadein 1.2s;
+}
+
+.info button:hover {
+  background: #024e96;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.281);
+}
