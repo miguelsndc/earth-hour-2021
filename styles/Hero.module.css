@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url('../public/earth.jpg');
+  background-image: url('../public/images/earth.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,26 +36,7 @@
 }
 
 .info button {
-  border: 0;
-  outline: 0;
-
-  border-radius: 4px;
-
-  width: 12rem;
-  height: 3.5rem;
-  margin-top: 1.75rem;
-
-  background: #026acc;
-
-  transition: background 0.2s ease-in-out;
-
-  color: white;
-  font-weight: 600;
   animation: fadein 1.2s;
-}
-
-.info button:hover {
-  background: #024e96;
 }
 
 @keyframes fadein {
@@ -76,4 +57,24 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.281);
+}
+
+@media screen and (max-width: 720px) {
+  .info p {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info h1 {
+    font-size: 2.5rem;
+  }
+
+  .info p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .hero {
+    padding: 1.5rem;
+  }
 }

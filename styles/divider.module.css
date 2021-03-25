@@ -1,0 +1,17 @@
+.divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(168, 168, 168, 0),
+    rgba(148, 146, 146, 0.267),
+    rgba(163, 162, 162, 0)
+  );
+  margin: 8rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .divider {
+    margin: 6rem 0;
+  }
+}

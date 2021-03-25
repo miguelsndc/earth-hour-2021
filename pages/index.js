@@ -1,20 +1,20 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
-import KnowMore from '../components/KnowMore';
+import Info from '../components/Info';
 import Navbar from '../components/navbar';
-import styles from '../styles/Home.module.css';
+import PageFooter from '../components/PageFooter';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Hora do Planeta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Hero />
-      <KnowMore />
-      <div style={{ height: '2000px' }}></div>
+      <Info />
+      <PageFooter />
     </div>
   );
 }

@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  background: rgb(18, 18, 19);
+  margin-top: 6rem;
+  padding: 2rem;
+
+  display: flex;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+
+  background-image: url('../public/images/instagram\ \(1\).svg');
+  background-size: contain;
+}
+
+.container li {
+  margin: 1rem 0;
+}
+
+.container ul li:nth-child(3),
+.container ul li:nth-child(4) {
+  display: flex;
+  align-items: center;
+}
+.container ul li:nth-child(3) > .instagram,
+.container ul li:nth-child(4) > .person {
+  margin-right: 0.5rem;
+}
+
+.person {
+  width: 20px;
+  height: 20px;
+
+  background-image: url('../public/images/user.svg');
+  background-size: contain;
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+}

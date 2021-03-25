@@ -22,8 +22,9 @@ ul {
 
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: #17171a;
+  font-weight: 400;
   color: white;
-  background-color: f6f7fb;
 }
 
 button,

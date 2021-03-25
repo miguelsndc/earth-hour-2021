@@ -1,0 +1,33 @@
+.container {
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.container iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 0;
+  cursor: pointer;
+}
+
+.container h1 {
+  font-size: 3.4rem;
+}
+
+.container p {
+  margin: 2rem;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .container p {
+    max-width: 100%;
+  }
+}

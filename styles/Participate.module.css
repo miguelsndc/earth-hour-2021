@@ -1,0 +1,81 @@
+.container {
+  width: 80%;
+  display: block;
+  margin: 3.8rem auto;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.container p {
+  margin-top: 1rem;
+  width: 95%;
+  max-width: 600px;
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .img {
+  width: 100%;
+  height: 500px;
+
+  background-image: url('../public/images/docusign-uI-fScjuXnI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 8px;
+} */
+
+.img {
+  width: 100%;
+  height: 400px;
+
+  background-image: url('../public/images/docusign-uI-fScjuXnI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1380px) {
+  .img {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container p {
+    margin-top: 1rem;
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .img {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 384px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+}
