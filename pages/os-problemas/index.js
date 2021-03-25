@@ -12,8 +12,8 @@ export default function index() {
         <title>Os Problemas</title>
       </Head>
       <Navbar />
-      <Hero bgImgPath="/images/deforestation.jpg">
-        <h1>Aprenda sobre os problemas.</h1>
+      <Hero bgImgPath="/images/fire.jpg">
+        <h1>O que de fato é a mudança climática ?</h1>
         <p>
           Aprenda mais sobre os problemas que o planeta está enfrentando, nossos
           desafios e o que eles representam.

@@ -28,32 +28,32 @@ export default function Index() {
         <h1>Nossa História</h1>
         <p>
           Iniciado pela WWF e parceiros, como um apagão simbólico em Sidney no
-          ano de 2007, A Hora do Planeta é agora um dos maiores movimentos.
-          Acontecendo todo último sábado de março, engaja milhões de pessoas em
-          mais de 180 países e território, desligando suas luzes para mostrar
-          suporte para o nosso planeta. Mas vai muito além da ação simbólica de
-          desligar as luzas, a Hora do Planeta se tornou um catalizador de
-          mudanças ambientais, levando a maiores mudanças legislativas, ao
-          explorar o poder dar pessoas e das ações coletivas. A Hora do Planeta
-          é um movimento aberto e todos são bem-vindos, para ajudar a ampliar
-          nossa missão de unir as pessoas e proteger o planeta.
-          <h2 style={{ marginTop: '1rem' }}>Nossa Missão: Antes e Agora</h2>
-          <p>
-            Em 2007, encorajamos as pessoas ao redor do mundo a desligar suas
-            luzes para chamar atenção para as mudanças climáticas. Mais de uma
-            década depois, a crise climática perdura, agravada por outra ameaça:
-            a perda rápida da biodiversidade. Ecossistemas naturais são vitais
-            para o nosso futuro, e a perda dos últimos 50 anos é totalmente sem
-            precedentes na história humana . A Natureza não só nos provém
-            comida, água, ar limpo e outros serviços que valem mais de 125
-            trilhões de dólares ao ano, ela também é um dos nossos maiores
-            aliados contra a mudança climática. Proteger a natureza é uma das
-            soluções mais efetivas e imediatas para a crise climática . Hoje, a
-            Hora do Planeta busca conscientizar e desencadear discussões globais
-            para proteger a natureza não somente para combater a crise, mas para
-            garantir a nossa própria saúde, felicidade, prosperidade e até mesmo
-            sobrevivência.
-          </p>
+          ano de 2007, A Hora do Planeta é agora um dos maiores movimentos de
+          conscientização ambiental. Acontecendo todo último sábado de março,
+          engaja milhões de pessoas em mais de 180 países e território,
+          desligando suas luzes para mostrar suporte para o nosso planeta. Mas
+          vai muito além da ação simbólica de desligar as luzas, a Hora do
+          Planeta se tornou um catalizador de mudanças ambientais, levando a
+          maiores mudanças legislativas, ao explorar o poder dar pessoas e das
+          ações coletivas. A Hora do Planeta é um movimento aberto e todos são
+          bem-vindos, para ajudar a ampliar nossa missão de unir as pessoas e
+          proteger o planeta.
+        </p>
+
+        <p>
+          Em 2007, encorajamos as pessoas ao redor do mundo a desligar suas
+          luzes para chamar atenção para as mudanças climáticas. Mais de uma
+          década depois, a crise climática perdura, agravada por outra ameaça: a
+          perda rápida da biodiversidade. Ecossistemas naturais são vitais para
+          o nosso futuro, e a perda dos últimos 50 anos é totalmente sem
+          precedentes na história humana . A Natureza não só nos provém comida,
+          água, ar limpo e outros serviços que valem mais de 125 trilhões de
+          dólares ao ano, ela também é um dos nossos maiores aliados contra a
+          mudança climática. Proteger a natureza é uma das soluções mais
+          efetivas e imediatas para a crise climática . Hoje, a Hora do Planeta
+          busca conscientizar e desencadear discussões globais para proteger a
+          natureza não somente para combater a crise, mas para garantir a nossa
+          própria saúde, felicidade, prosperidade e até mesmo sobrevivência.
         </p>
       </TextSection>
       <Divider />
@@ -69,7 +69,7 @@ export default function Index() {
           colocará as questões ambientais como centro nos debates
           internacionais. Juntos, podemos falar e mostrar para os líderes
           globais e outras pessoas importantes que o meio-ambiente importa e
-          ações urgentes dev em ser tomadas para reverter as perdas.
+          ações urgentes devem ser tomadas para reverter as perdas.
         </p>
         <CtaButton linkTo="/os-problemas">Aprender Mais </CtaButton>
       </HighlightSection>

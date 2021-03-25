@@ -79,42 +79,46 @@ export default function Navbar() {
   function MobileMenu() {
     return (
       <nav className={styles.mobileNav}>
-        <h1>logo</h1>
+        <Link href="/">
+          <h1>logo</h1>
+        </Link>
 
         <div
           className={styles.openMenuIcon}
-          onClick={() => setIsMenuOpen(true)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></div>
         {isMenuOpen && (
           <>
             <div
               className={styles.overlay}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             ></div>
-            <div className={styles.mobileMenu}>
-              <div className={styles.closeMenuWrapper}>
-                <h1>
-                  <Link href="/">
-                    <a>Logo</a>
+            <aside className={styles.mobileMenu}>
+              <div>
+                <div className={styles.closeMenuWrapper}>
+                  <h1>
+                    <Link href="/">
+                      <a>Logo</a>
+                    </Link>
+                  </h1>
+                  <div
+                    className={styles.closeMenuIcon}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  ></div>
+                </div>
+                <ul>
+                  <Link href="/nossa-missao">
+                    <li>A Missão</li>
                   </Link>
-                </h1>
-                <div
-                  className={styles.closeMenuIcon}
-                  onClick={() => setIsMenuOpen(false)}
-                ></div>
+                  <Link href="/os-problemas">
+                    <li>Os Problemas</li>
+                  </Link>
+                  <Link href="/como-participar">
+                    <li>Como Participar</li>
+                  </Link>
+                </ul>
               </div>
-              <ul>
-                <Link href="/nossa-missao">
-                  <li>A Missão</li>
-                </Link>
-                <Link href="/os-problemas">
-                  <li>Os Problemas</li>
-                </Link>
-                <Link href="/como-participar">
-                  <li>Como Participar</li>
-                </Link>
-              </ul>
-            </div>
+            </aside>
           </>
         )}
       </nav>
