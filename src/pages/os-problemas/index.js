@@ -18,7 +18,7 @@ export default function index() {
         <title>Os Problemas</title>
       </Head>
       <Navbar />
-      <Hero bgImgPath="/images/fire.jpg">
+      <Hero bgImgPath="images/fire.jpg">
         <h1>O que de fato é a mudança climática ?</h1>
         <p>
           Aprenda mais sobre os problemas que o planeta está enfrentando, nossos
@@ -121,7 +121,7 @@ export default function index() {
           Os desafios que estamos enfrentando só aumentam e parecem
           assustadores, mas todos podemos fazer alguma coisa.
         </p>
-        <CtaButton linkTo="collectivity">Ler Mais</CtaButton>
+        <CtaButton linkTo="10-coisas-que-podem-ser-feitas">Ler Mais</CtaButton>
       </ReverseHighlight>
       <Divider />
       <PageFooter />
