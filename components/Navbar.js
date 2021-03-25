@@ -3,9 +3,10 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 
-export default function Navbar() {
+function Navbar() {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isMenuMobile, setIsMenuMobile] = useState(false);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const mobileBreakpoint = 840;
@@ -76,6 +77,43 @@ export default function Navbar() {
     );
   }
 
+  function Test() {
+    return (
+      <aside
+        className={
+          isMenuOpen
+            ? `${styles.navMenu} ${styles.navMenuActive}`
+            : `${styles.navMenu}`
+        }
+      >
+        <div>
+          <div className={styles.closeMenuWrapper}>
+            <h1>
+              <Link href="/">
+                <a>Logo</a>
+              </Link>
+            </h1>
+            <div
+              className={styles.closeMenuIcon}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            ></div>
+          </div>
+          <ul>
+            <Link href="/nossa-missao">
+              <li>A Missão</li>
+            </Link>
+            <Link href="/os-problemas">
+              <li>Os Problemas</li>
+            </Link>
+            <Link href="/como-participar">
+              <li>Como Participar</li>
+            </Link>
+          </ul>
+        </div>
+      </aside>
+    );
+  }
+
   function MobileMenu() {
     return (
       <nav className={styles.mobileNav}>
@@ -87,40 +125,7 @@ export default function Navbar() {
           className={styles.openMenuIcon}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></div>
-        {isMenuOpen && (
-          <>
-            <div
-              className={styles.overlay}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            ></div>
-            <aside className={styles.mobileMenu}>
-              <div>
-                <div className={styles.closeMenuWrapper}>
-                  <h1>
-                    <Link href="/">
-                      <a>Logo</a>
-                    </Link>
-                  </h1>
-                  <div
-                    className={styles.closeMenuIcon}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  ></div>
-                </div>
-                <ul>
-                  <Link href="/nossa-missao">
-                    <li>A Missão</li>
-                  </Link>
-                  <Link href="/os-problemas">
-                    <li>Os Problemas</li>
-                  </Link>
-                  <Link href="/como-participar">
-                    <li>Como Participar</li>
-                  </Link>
-                </ul>
-              </div>
-            </aside>
-          </>
-        )}
+        <Test />
       </nav>
     );
   }
@@ -133,3 +138,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export default React.memo(Navbar);

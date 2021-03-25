@@ -16,10 +16,9 @@
   width: 100%;
   max-width: 1000px;
   display: block;
-  margin: 3rem auto 0 auto;
 }
 
-.definition p:last-child {
+.definition p {
   margin: 1rem auto 0 auto;
 }
 

@@ -54,7 +54,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.281);
+  background: rgba(0, 0, 0, 0.425);
 }
 
 @media screen and (max-width: 720px) {

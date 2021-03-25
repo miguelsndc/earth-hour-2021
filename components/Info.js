@@ -3,7 +3,7 @@ import React from 'react';
 import TextSection from '../components/TextSection';
 import HighlightSection from '../components/HighlightSection';
 import Divider from '../components/Divider.js';
-import Lights from '../components/Lights';
+import ReverseHightlight from '../components/Lights';
 import YoutubeLiveSection from '../components/YoutubeLiveSection';
 import CtaButton from './CtaButton';
 
@@ -41,7 +41,18 @@ function Info() {
         <CtaButton linkTo="/nossa-missao">Ler Mais</CtaButton>
       </HighlightSection>
       <Divider />
-      <Lights />
+      <ReverseHightlight bgImgPath="/images/candle.jpg">
+        <h1>Mais do que um apagar de luzes</h1>
+        <p>
+          O Poder da Hora do Planeta vêm das pessoas. Embora as circunstâncias
+          globais sejam diferentes este ano devido à COVID-19, ainda temos uma
+          oportunidade incrível de causar impacto - online e de nossas casas.
+          Não importa onde esteja no mundo, você pode falar pela natureza e
+          chamar a atenção global para os grandes problemas que o nosso planeta
+          enfrenta!
+        </p>
+        <CtaButton linkTo="/nossa-missao">Ler Mais</CtaButton>
+      </ReverseHightlight>
       <Divider />
       <YoutubeLiveSection />
     </>
