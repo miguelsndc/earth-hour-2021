@@ -11,7 +11,7 @@
   width: 20px;
   height: 20px;
 
-  background-image: url('../public/images/instagram\ \(1\).svg');
+  background-image: url('../public/icons/instagram\ \(1\).svg');
   background-size: contain;
 }
 
@@ -33,7 +33,7 @@
   width: 20px;
   height: 20px;
 
-  background-image: url('../public/images/user.svg');
+  background-image: url('../public/icons/user.svg');
   background-size: contain;
 }
 

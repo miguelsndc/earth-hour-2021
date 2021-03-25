@@ -18,7 +18,7 @@ export default function Lights() {
             chamar a atenção global para os grandes problemas que o nosso
             planeta enfrenta!
           </p>
-          <CtaButton>Participar</CtaButton>
+          <CtaButton linkTo="/nossa-missao">Ler Mais</CtaButton>
         </div>
       </div>
     </section>

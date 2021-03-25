@@ -3,14 +3,35 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 
-export default function navbar() {
+export default function Navbar() {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isMenuMobile, setIsMenuMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const mobileBreakpoint = 840;
+  const offsetTop = 100;
 
   function handleScroll() {
-    if (window.scrollY >= 250) {
+    if (window.scrollY >= offsetTop) {
       setHasScrolled(true);
     } else {
       setHasScrolled(false);
+    }
+  }
+
+  function activateMobileMenu() {
+    if (window.innerWidth <= mobileBreakpoint) {
+      setIsMenuMobile(true);
+    } else {
+      setIsMenuMobile(false);
+    }
+
+    if (isMenuOpen && window.innerWidth >= mobileBreakpoint) {
+      setIsMenuOpen(false);
+    }
+
+    if (!hasScrolled && isMenuOpen) {
+      console.log('DSAOFOFDAOU');
     }
   }
 
@@ -21,10 +42,19 @@ export default function navbar() {
     };
   }, []);
 
-  return (
-    <header
-      className={`${styles.navbar} ${hasScrolled && styles.navbarActive}`}
-    >
+  useEffect(() => {
+    if (window.innerWidth <= mobileBreakpoint) {
+      setIsMenuMobile(true);
+    }
+
+    window.addEventListener('resize', activateMobileMenu);
+    return () => {
+      window.removeEventListener('resize', activateMobileMenu);
+    };
+  }, []);
+
+  function DesktopMenu() {
+    return (
       <nav>
         <h1>
           <Link href="/">
@@ -32,12 +62,70 @@ export default function navbar() {
           </Link>
         </h1>
         <ul>
-          <li>A Missão</li>
-          <li>Os Problemas</li>
-          <li>Como Participar</li>
-          <li>O que há de novo ?</li>
+          <Link href="/nossa-missao">
+            <li>A Missão</li>
+          </Link>
+          <Link href="/os-problemas">
+            <li>Os Problemas</li>
+          </Link>
+          <Link href="/como-participar">
+            <li>Como Participar</li>
+          </Link>
         </ul>
       </nav>
+    );
+  }
+
+  function MobileMenu() {
+    return (
+      <nav className={styles.mobileNav}>
+        <h1>logo</h1>
+
+        <div
+          className={styles.openMenuIcon}
+          onClick={() => setIsMenuOpen(true)}
+        ></div>
+        {isMenuOpen && (
+          <>
+            <div
+              className={styles.overlay}
+              onClick={() => setIsMenuOpen(false)}
+            ></div>
+            <div className={styles.mobileMenu}>
+              <div className={styles.closeMenuWrapper}>
+                <h1>
+                  <Link href="/">
+                    <a>Logo</a>
+                  </Link>
+                </h1>
+                <div
+                  className={styles.closeMenuIcon}
+                  onClick={() => setIsMenuOpen(false)}
+                ></div>
+              </div>
+              <ul>
+                <Link href="/nossa-missao">
+                  <li>A Missão</li>
+                </Link>
+                <Link href="/os-problemas">
+                  <li>Os Problemas</li>
+                </Link>
+                <Link href="/como-participar">
+                  <li>Como Participar</li>
+                </Link>
+              </ul>
+            </div>
+          </>
+        )}
+      </nav>
+    );
+  }
+
+  return (
+    <header
+      className={`${styles.navbar} ${hasScrolled && styles.navbarActive}`}
+    >
+      {isMenuMobile ? <MobileMenu /> : <DesktopMenu />}
     </header>
   );
 }
