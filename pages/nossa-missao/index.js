@@ -8,7 +8,7 @@ import HighlightSection from '../../components/HighlightSection';
 import PageFooter from '../../components/PageFooter';
 import CtaButton from '../../components/CtaButton';
 import Divider from '../../components/Divider';
-import Navbar from '../../components/navbar';
+import Navbar from '../../components/Navbar';
 
 export default function Index() {
   return (

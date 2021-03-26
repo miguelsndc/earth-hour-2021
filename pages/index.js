@@ -2,7 +2,7 @@ import Head from 'next/head';
 import CtaButton from '../components/CtaButton';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import PageFooter from '../components/PageFooter';
 
 export default function Home() {
