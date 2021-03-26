@@ -1,5 +1,5 @@
 <p align=center>
-  <img src="https://res.cloudinary.com/dx3vxwusq/image/upload/v1614534243/favicon_nkkpiq.png" alt="Logo move-it">
+  <img src="https://res.cloudinary.com/db9t2jrhe/image/upload/v1616762448/worldwide_sgztzs.svg" alt="Logo move-it" width="200">
 </p>
 
 <h1 align="center">Earth Hour</h1>
