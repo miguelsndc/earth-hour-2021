@@ -101,16 +101,6 @@ export default function index() {
                 </p>
               </div>
             </li>
-            <li>
-              <div>
-                <h4>{'>'} Uso de combustíveis fósseis</h4>
-                <p>
-                  Ao longo dos últimos 150 anos, a indústria alterou o
-                  equilíbrio do ciclo do carbono, ao queimar quantidades enormes
-                  de combustíveis fósseis.
-                </p>
-              </div>
-            </li>
           </ul>
         </p>
       </HighlightSection>
