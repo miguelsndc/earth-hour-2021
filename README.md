@@ -52,7 +52,7 @@ This project was developed by me the following technologies:
 ## 📚 What I've learned?
 
 ✔ Multipage Websites with Next.js;<br>
-✔ How it feels do deal with really short deadlines ;c;<br>
+✔ How it feels do deal with really short deadlines :cry: ( i literally had less than 3 days to build this )<br>
 ✔ More about Components - Reusing thems<br>
 ✔ Deploy to vercel via Git repo<br>
 
