@@ -46,14 +46,14 @@
   width: 25px;
   height: 20px;
 
-  background-image: url('../public/icons/menu_black_24dp\ \(1\).svg');
+  background-image: url('/icons/menu_black_24dp\ \(1\).svg');
 }
 
 .closeMenuIcon {
   width: 25px;
   height: 20px;
 
-  background-image: url('../public/icons/close_black_24dp.svg');
+  background-image: url('/icons/close_black_24dp.svg');
 }
 
 .closeMenuWrapper {

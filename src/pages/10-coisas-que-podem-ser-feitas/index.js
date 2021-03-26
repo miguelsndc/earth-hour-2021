@@ -4,7 +4,6 @@ import React from 'react';
 
 import HighlightSection from '../../components/HighlightSection';
 import ReverseHighlight from '../../components/Lights';
-import TextSection from '../../components/TextSection';
 import CtaButton from '../../components/CtaButton';
 import Divider from '../../components/Divider';
 import Navbar from '../../components/Navbar';
@@ -150,7 +149,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/keep-yourself-informed.jpg">
+      <ReverseHighlight bgImgPath="/images/earth.jpg">
         <h1>10. Participe da Hora do Planeta 2021.</h1>
         <p>
           Esse ano temos uma oportunidade única de mudança, de chamar atenção

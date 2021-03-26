@@ -59,7 +59,7 @@ function Navbar() {
       <nav>
         <h1>
           <Link href="/">
-            <a>Logo</a>
+            <a>WWF</a>
           </Link>
         </h1>
         <ul>
@@ -79,38 +79,48 @@ function Navbar() {
 
   function Test() {
     return (
-      <aside
-        className={
-          isMenuOpen
-            ? `${styles.navMenu} ${styles.navMenuActive}`
-            : `${styles.navMenu}`
-        }
-      >
-        <div>
-          <div className={styles.closeMenuWrapper}>
-            <h1>
+      <>
+        {isMenuOpen && (
+          <div
+            className={styles.overlay}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          ></div>
+        )}
+
+        <aside
+          className={
+            isMenuOpen
+              ? `${styles.navMenu} ${styles.navMenuActive}`
+              : `${styles.navMenu}`
+          }
+        >
+          <div>
+            <div className={styles.closeMenuWrapper}>
+              <h1>
+                <a>WWF</a>
+              </h1>
+              <div
+                className={styles.closeMenuIcon}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              ></div>
+            </div>
+            <ul>
               <Link href="/">
-                <a>Logo</a>
+                <li>Home</li>
               </Link>
-            </h1>
-            <div
-              className={styles.closeMenuIcon}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            ></div>
+              <Link href="/nossa-missao">
+                <li>A Missão</li>
+              </Link>
+              <Link href="/os-problemas">
+                <li>Os Problemas</li>
+              </Link>
+              <Link href="/como-participar">
+                <li>Como Participar</li>
+              </Link>
+            </ul>
           </div>
-          <ul>
-            <Link href="/nossa-missao">
-              <li>A Missão</li>
-            </Link>
-            <Link href="/os-problemas">
-              <li>Os Problemas</li>
-            </Link>
-            <Link href="/como-participar">
-              <li>Como Participar</li>
-            </Link>
-          </ul>
-        </div>
-      </aside>
+        </aside>
+      </>
     );
   }
 
@@ -118,7 +128,7 @@ function Navbar() {
     return (
       <nav className={styles.mobileNav}>
         <Link href="/">
-          <h1>logo</h1>
+          <h1>WWF</h1>
         </Link>
 
         <div
@@ -139,4 +149,4 @@ function Navbar() {
   );
 }
 
-export default React.memo(Navbar);
+export default Navbar;

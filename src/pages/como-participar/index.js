@@ -5,7 +5,6 @@ import Hero from '../../components/Hero';
 import Divider from '../../components/Divider';
 import HighlightSection from '../../components/HighlightSection';
 import ReverseHighlight from '../../components/Lights';
-import TextSection from '../../components/TextSection';
 import PageFooter from '../../components/PageFooter';
 import Navbar from '../../components/Navbar';
 import YoutubeLiveSection from '../../components/YoutubeLiveSection';

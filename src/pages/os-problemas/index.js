@@ -19,7 +19,7 @@ export default function index() {
       </Head>
       <Navbar />
       <Hero bgImgPath="images/fire.jpg">
-        <h1>O que de fato é a mudança climática ?</h1>
+        <h1>O que de fato é a mudança climática?</h1>
         <p>
           Aprenda mais sobre os problemas que o planeta está enfrentando, nossos
           desafios e o que eles representam.
