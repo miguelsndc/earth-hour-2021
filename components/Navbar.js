@@ -72,6 +72,9 @@ function Navbar() {
           <Link href="/como-participar">
             <li>Como Participar</li>
           </Link>
+          <Link href="/10-coisas-que-podem-ser-feitas">
+            <li>Como Mudar</li>
+          </Link>
         </ul>
       </nav>
     );
@@ -116,6 +119,9 @@ function Navbar() {
               </Link>
               <Link href="/como-participar">
                 <li>Como Participar</li>
+              </Link>
+              <Link href="/10-coisas-que-podem-ser-feitas">
+                <li>Como Mudar</li>
               </Link>
             </ul>
           </div>
