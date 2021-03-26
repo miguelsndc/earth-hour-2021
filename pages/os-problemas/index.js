@@ -16,6 +16,7 @@ export default function index() {
     <div>
       <Head>
         <title>Os Problemas</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Hero bgImgPath="images/fire.jpg">

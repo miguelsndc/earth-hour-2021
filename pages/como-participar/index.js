@@ -15,6 +15,7 @@ export default function index() {
     <div>
       <Head>
         <title>Como Participar</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Hero bgImgPath="/images/preserved.jpg">

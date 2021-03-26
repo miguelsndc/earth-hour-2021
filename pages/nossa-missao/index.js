@@ -15,6 +15,7 @@ export default function Index() {
     <div>
       <Head>
         <title>Nossa Missão</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Hero bgImgPath={'/images/industry.jpg'}>

@@ -15,6 +15,7 @@ export default function Index() {
     <div>
       <Head>
         <title>10 Coisas que podem ser feitas</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <Hero bgImgPath="/images/protest.jpg">
