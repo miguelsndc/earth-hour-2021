@@ -5,8 +5,6 @@ import Hero from '../../components/Hero';
 import Divider from '../../components/Divider';
 import HighlightSection from '../../components/HighlightSection';
 import ReverseHighlight from '../../components/Lights';
-import PageFooter from '../../components/PageFooter';
-import Navbar from '../../components/Navbar';
 import YoutubeLiveSection from '../../components/YoutubeLiveSection';
 import CtaButton from '../../components/CtaButton';
 
@@ -17,7 +15,6 @@ export default function index() {
         <title>Como Participar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Hero bgImgPath="/images/preserved.jpg">
         <h1>Saiba como Participar da Hora do Planeta 2021.</h1>
         <p>
@@ -51,7 +48,6 @@ export default function index() {
           Aprender Mais
         </CtaButton>
       </ReverseHighlight>
-      <PageFooter />
     </div>
   );
 }

@@ -5,10 +5,8 @@ import React from 'react';
 import Hero from '../../components/Hero';
 import TextSection from '../../components/TextSection';
 import HighlightSection from '../../components/HighlightSection';
-import PageFooter from '../../components/PageFooter';
 import CtaButton from '../../components/CtaButton';
 import Divider from '../../components/Divider';
-import Navbar from '../../components/Navbar';
 
 export default function Index() {
   return (
@@ -17,7 +15,6 @@ export default function Index() {
         <title>Nossa Missão</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Hero bgImgPath={'/images/industry.jpg'}>
         <h1>Nossa missão</h1>
         <p>
@@ -79,7 +76,6 @@ export default function Index() {
         <h1 style={{ fontSize: '3rem' }}>Junte-se a Nós e Faça a Diferença.</h1>
         <CtaButton linkTo="/como-participar">Participar</CtaButton>
       </div>
-      <PageFooter />
     </div>
   );
 }

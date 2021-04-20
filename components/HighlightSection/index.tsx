@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/Participate.module.css';
+import styles from './Highlight.module.css';
 
 export default function HighlightSection({ children, bgImgPath }) {
   return (

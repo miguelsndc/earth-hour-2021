@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import styles from '../styles/PageFooter.module.css';
+import styles from './PageFooter.module.css';
 
 export default function PageFooter() {
   return (
@@ -10,7 +10,7 @@ export default function PageFooter() {
       <div className="col1">
         <ul>
           <li>
-            <Image src="/images/dsadsa.png" width={90} height={50} />
+            <Image src="/images/ete.png" width={90} height={50} />
           </li>
           <li> ETE Porto Digital</li>
           <li>

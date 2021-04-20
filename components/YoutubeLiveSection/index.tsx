@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/YoutubeLiveSection.module.css';
+import styles from './YoutubeLiveSection.module.css';
 
 export default function YoutubeLiveSection() {
   return (

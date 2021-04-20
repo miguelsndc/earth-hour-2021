@@ -6,8 +6,6 @@ import HighlightSection from '../../components/HighlightSection';
 import ReverseHighlight from '../../components/Lights';
 import CtaButton from '../../components/CtaButton';
 import Divider from '../../components/Divider';
-import Navbar from '../../components/Navbar';
-import PageFooter from '../../components/PageFooter';
 import Hero from '../../components/Hero';
 
 export default function Index() {
@@ -17,7 +15,6 @@ export default function Index() {
         <title>10 Coisas que podem ser feitas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Hero bgImgPath="/images/protest.jpg">
         <h1>10 Coisas que podem ser feitas</h1>
         <p>10 coisas que você pode fazer para ajudar a salvar nosso planeta.</p>
@@ -160,7 +157,6 @@ export default function Index() {
         </p>
         <CtaButton linkTo="/como-participar">Participar</CtaButton>
       </ReverseHighlight>
-      <PageFooter />
     </div>
   );
 }

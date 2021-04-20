@@ -1,11 +1,11 @@
 import React from 'react';
 
-import TextSection from '../components/TextSection';
-import HighlightSection from '../components/HighlightSection';
-import Divider from '../components/Divider.js';
-import ReverseHightlight from '../components/Lights';
-import YoutubeLiveSection from '../components/YoutubeLiveSection';
-import CtaButton from './CtaButton';
+import TextSection from '../TextSection';
+import HighlightSection from '../HighlightSection';
+import Divider from '../Divider';
+import ReverseHightlight from '../Lights';
+import YoutubeLiveSection from '../YoutubeLiveSection';
+import CtaButton from '../CtaButton';
 
 function Info() {
   return (

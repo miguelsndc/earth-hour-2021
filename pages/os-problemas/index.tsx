@@ -7,8 +7,6 @@ import ReverseHighlight from '../../components/Lights';
 import TextSection from '../../components/TextSection';
 import CtaButton from '../../components/CtaButton';
 import Divider from '../../components/Divider';
-import Navbar from '../../components/Navbar';
-import PageFooter from '../../components/PageFooter';
 import Hero from '../../components/Hero';
 
 export default function index() {
@@ -18,7 +16,6 @@ export default function index() {
         <title>Os Problemas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Hero bgImgPath="images/fire.jpg">
         <h1>O que de fato é a mudança climática?</h1>
         <p>
@@ -115,7 +112,6 @@ export default function index() {
         <CtaButton linkTo="10-coisas-que-podem-ser-feitas">Ler Mais</CtaButton>
       </ReverseHighlight>
       <Divider />
-      <PageFooter />
     </div>
   );
 }

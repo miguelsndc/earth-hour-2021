@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/Lights.module.css';
+import styles from './Lights.module.css';
 
 export default function Lights({ children, bgImgPath }) {
   return (

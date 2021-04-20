@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import styles from '../styles/CtaButton.module.css';
+import styles from './CtaButton.module.css';
 
 export default function CtaButton({ children, linkTo }) {
   return (
