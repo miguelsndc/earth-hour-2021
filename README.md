@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <a href="https://hora-do-planeta-2021.vercel.app/" target="_blank">
+  <a href="https://earth-hour-2021.vercel.app/" target="_blank">
     <img alt="Demo on Vercel" src="https://res.cloudinary.com/dx3vxwusq/image/upload/v1613186216/vercel-deploy_x5v2jc.png">
   </a>
   
