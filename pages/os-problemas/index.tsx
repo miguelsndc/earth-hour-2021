@@ -14,6 +14,7 @@ export default function index() {
         title='O que de fato é a mudança climática?'
         description='Aprenda mais sobre os problemas que o planeta está enfrentando, nossos
           desafios e o que eles representam.'
+        alt='Queimada em floresta'
       />
 
       <TextSection>
@@ -54,7 +55,7 @@ export default function index() {
         </p>
       </TextSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/polution.webp'>
+      <HighlightSection imgSrc='/images/polution.webp' alt='Indústria poluente'>
         <h1>O que causa o Aquecimento Global?</h1>
         <p>
           <ul>
@@ -66,7 +67,10 @@ export default function index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/meltedIce.webp'>
+      <HighlightSection
+        imgSrc='/images/meltedIce.webp'
+        alt='Gelo derretido no oceano'
+      >
         <h1>Como você pode ajudar ?</h1>
         <p>
           Os desafios que estamos enfrentando só aumentam e parecem

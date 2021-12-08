@@ -17,6 +17,7 @@ export default function Home() {
           de um dos maiores eventos globais de conscientização ambiental.'
         linkText='Ler Mais'
         linkUrl='/nossa-missao'
+        alt='Foto de satélite da terra'
       />
 
       <TextSection>
@@ -35,7 +36,10 @@ export default function Home() {
         </p>
       </TextSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/phone.webp'>
+      <HighlightSection
+        imgSrc='/images/phone.webp'
+        alt='Pessoa utilizando celular'
+      >
         <h1>Participe onde você estiver.</h1>
         <p>
           Durante os anos, apagamos as luzes, de ruas inteiras ao redor do
@@ -46,7 +50,11 @@ export default function Home() {
         <MainLink linkTo='/nossa-missao'>Ler Mais</MainLink>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/candle.webp' direction='rtl'>
+      <HighlightSection
+        imgSrc='/images/candle.webp'
+        direction='rtl'
+        alt='Vela acesa'
+      >
         <h1>Mais do que um apagar de luzes</h1>
         <p>
           O Poder da Hora do Planeta vêm das pessoas. Embora as circunstâncias

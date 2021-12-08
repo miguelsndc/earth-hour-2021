@@ -14,9 +14,14 @@ export default function index() {
         title='Saiba como Participar da Hora do Planeta 2021.'
         description='Saiba como participar do evento que pode mudar a nossa forma de viver
           nos próximos anos.'
+        alt='Floresta'
       />
       <Spacer />
-      <HighlightSection imgSrc='/images/multiple-candles.webp'>
+      alt='Pessoa segurando vela'
+      <HighlightSection
+        imgSrc='/images/multiple-candles.webp'
+        alt='Pessoa segurando vela'
+      >
         <h1>Desligue suas luzes.</h1>
         <p>
           Desligue as luzes da sua casa, convença as pessoas ao seu redor a
@@ -28,7 +33,10 @@ export default function index() {
       <Spacer />
       <YoutubeLiveSection />
       <Spacer />
-      <HighlightSection imgSrc='/images/happiness.webp'>
+      <HighlightSection
+        imgSrc='/images/happiness.webp'
+        alt='Homem em pé no penhasco'
+      >
         <h1>Mude seus hábitos.</h1>
         <p>
           Muito mais do que o festival, nosso movimento busca um mundo melhor,

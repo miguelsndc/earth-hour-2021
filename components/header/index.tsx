@@ -68,8 +68,17 @@ export const Navbar = () => {
               <a>WWF</a>
             </Link>
           </h1>
-          <button className={styles.openMenu} onClick={handleToggleMenu}>
-            <Image src='/icons/menu.svg' width={36} height={36} />
+          <button
+            className={styles.openMenu}
+            onClick={handleToggleMenu}
+            aria-label='open menu'
+          >
+            <Image
+              src='/icons/menu.svg'
+              width={36}
+              height={36}
+              alt='open menu'
+            />
           </button>
 
           <div
@@ -78,8 +87,17 @@ export const Navbar = () => {
             }`}
           >
             {menuOpen && (
-              <button className={styles.closeMenu} onClick={handleToggleMenu}>
-                <Image src='/icons/close.svg' width={36} height={36} />
+              <button
+                className={styles.closeMenu}
+                onClick={handleToggleMenu}
+                aria-label='close menu'
+              >
+                <Image
+                  src='/icons/close.svg'
+                  width={36}
+                  height={36}
+                  alt='close menu'
+                />
               </button>
             )}
 

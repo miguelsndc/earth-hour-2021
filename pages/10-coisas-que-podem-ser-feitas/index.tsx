@@ -7,10 +7,11 @@ export default function Index() {
         imgSrc='/images/protest.webp'
         title='10 Coisas que podem ser feitas'
         description='10 coisas que você pode fazer para ajudar a salvar nosso planeta.'
+        alt='Cartaz de protesto ambientalista'
       />
 
       <Spacer />
-      <HighlightSection imgSrc='/images/voice.webp'>
+      <HighlightSection imgSrc='/images/voice.webp' alt='Pessoas em protesto'>
         <h1>1. Use sua voz.</h1>
         <p>
           Nós somos uma das primeiras gerações a saber que estamos destruindo
@@ -27,7 +28,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/keep-yourself-informed.webp'>
+      <HighlightSection
+        imgSrc='/images/keep-yourself-informed.webp'
+        alt='Homens utilizando celular'
+      >
         <h1>2. Mantenha-se informado(a).</h1>
         <p>
           Uma das melhores coisas que você pode fazer é se manter informado -
@@ -41,7 +45,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/politics.webp'>
+      <HighlightSection
+        imgSrc='/images/politics.webp'
+        alt='Mulher falando no megafone'
+      >
         <h1>3. Seja Politicamente engajado.</h1>
         <p>
           Todas as pessoas acima dos 18 anos podem votar. Essa é uma
@@ -55,7 +62,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/riding-bike.webp'>
+      <HighlightSection
+        imgSrc='/images/riding-bike.webp'
+        alt='Pessoa andando de bicicleta na rua'
+      >
         <h1>4. Use meios de transporte sustentáveis.</h1>
         <p>
           Transporte é um dos setores mais poluentes. sendo, inquestionavelmente
@@ -67,7 +77,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/organic.webp'>
+      <HighlightSection
+        imgSrc='/images/organic.webp'
+        alt='Mesa de alimentos orgânicos'
+      >
         <h1>5. Coma de forma sustentável.</h1>
         <p>
           A Produção de alimentos é o pivô da extinção da vida selvagem. O que
@@ -82,7 +95,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/waste.webp'>
+      <HighlightSection imgSrc='/images/waste.webp' alt='Lixo'>
         <h1>6. Reduza seu desperdício.</h1>
         <p>
           Precisamos tornar o desperdício de nossos recursos inaceitável em
@@ -98,7 +111,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/organic.webp'>
+      <HighlightSection
+        imgSrc='/images/organic.webp'
+        alt='Mesa de alimentos orgânicos'
+      >
         <h1>7. Saiba o que está comprando.</h1>
         <p>
           Todos nós podemos fazer mais para ser mais conscientes sobre o que
@@ -112,7 +128,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/ong.webp'>
+      <HighlightSection
+        imgSrc='/images/ong.webp'
+        alt='Homem dando água a elefante'
+      >
         <h1>8. Doe.</h1>
         <p>
           Existem centenas de organizações não governamentais por todo o mundo
@@ -124,7 +143,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/volunteering.webp'>
+      <HighlightSection
+        imgSrc='/images/volunteering.webp'
+        alt='Criança plantando árvore'
+      >
         <h1>9. Se Voluntarie.</h1>
         <p>
           Se voluntariar pode ser difícil e caro se você não souber onde
@@ -137,7 +159,10 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/earth.webp'>
+      <HighlightSection
+        imgSrc='/images/earth.webp'
+        alt='Foto de satélite da Terra'
+      >
         <h1>10. Participe da Hora do Planeta 2021.</h1>
         <p>
           Esse ano temos uma oportunidade única de mudança, de chamar atenção

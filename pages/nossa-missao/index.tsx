@@ -14,6 +14,7 @@ export default function Index() {
         title='Nossa missão'
         description='Aprende porquê nós começamos e descubra o porquê da nossa missão. no
           ano de 2021 suas ações importam mais do que nunca.'
+        alt='Indústria poluente'
       />
 
       <TextSection>
@@ -49,7 +50,10 @@ export default function Index() {
         </p>
       </TextSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/united-nations.webp'>
+      <HighlightSection
+        imgSrc='/images/united-nations.webp'
+        alt='Entrada nações unidas '
+      >
         <h1>2021, O Ano que Importa.</h1>
         <p>
           2021 representa uma oportunidade imperdível para mudança. Líderes

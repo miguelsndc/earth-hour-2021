@@ -8,6 +8,7 @@ type Props = {
   description?: string;
   linkText?: string;
   linkUrl?: string;
+  alt?: string;
 };
 
 export const Hero = ({
@@ -16,6 +17,7 @@ export const Hero = ({
   description,
   linkText,
   linkUrl,
+  alt,
 }: Props) => {
   return (
     <section className={styles.hero}>
@@ -24,6 +26,7 @@ export const Hero = ({
         layout='fill'
         objectFit='cover'
         className={styles.img}
+        alt={alt}
       />
       <div className={styles.overlay}></div>
       <div className={styles.info}>

@@ -8,6 +8,9 @@ export const YoutubeLiveSection = () => (
       enxergar uma nova luz no planeta. Então COMPARTILHE! cada pessoa importa,
       vamos fazer o mundo assistir, vamos fazer o mundo falar.
     </p>
-    <iframe src='https://www.youtube.com/embed/hvBsgfn_cvY?mute=1'></iframe>
+    <iframe
+      src='https://www.youtube.com/embed/hvBsgfn_cvY?mute=1'
+      title='Live da Hora do Planeta 2021'
+    ></iframe>
   </section>
 );

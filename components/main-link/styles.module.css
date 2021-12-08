@@ -6,7 +6,7 @@
 
   border-radius: 4px;
 
-  background: #e9be00;
+  background: #10227a;
   padding: 1rem 2rem;
   margin-block-start: 1.2rem;
 
@@ -14,5 +14,5 @@
 }
 
 .button:hover {
-  background: #cfaa03;
+  background: #0d1b63;
 }
