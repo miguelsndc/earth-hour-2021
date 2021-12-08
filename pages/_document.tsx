@@ -4,10 +4,13 @@ class MyDocument extends Document {
     return (
       <Html lang='pt-br'>
         <Head>
-          <link rel='preconnect' href='https://fonts.gstatic.com' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap'
-            rel='stylesheet'
+          <meta
+            name='description'
+            content='Saiba mais sobre a Hora do Planeta 2021 e como participar!'
+          />
+          <meta
+            name='keywords'
+            content='planeta, hora do planeta, hora do planeta 2021, natureza, meio ambiente, poluição, desmatamento'
           />
         </Head>
         <body>
