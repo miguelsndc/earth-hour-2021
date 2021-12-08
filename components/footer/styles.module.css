@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  background: rgb(8, 8, 8);
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

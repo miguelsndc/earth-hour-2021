@@ -1,29 +1,22 @@
-import Head from 'next/head';
+import { Hero } from '../../components/hero';
+import { Divider } from '../../components/divider';
+import { HighlightSection } from '../../components/highlight';
+import { YoutubeLiveSection } from '../../components/live-section';
+import { MainLink } from '../../components/main-link';
 
-import React from 'react';
-import Hero from '../../components/Hero';
-import Divider from '../../components/Divider';
-import HighlightSection from '../../components/HighlightSection';
-import ReverseHighlight from '../../components/Lights';
-import YoutubeLiveSection from '../../components/YoutubeLiveSection';
-import CtaButton from '../../components/CtaButton';
+export const config = { amp: true };
 
 export default function index() {
   return (
     <div>
-      <Head>
-        <title>Como Participar</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Hero bgImgPath="/images/preserved.jpg">
-        <h1>Saiba como Participar da Hora do Planeta 2021.</h1>
-        <p>
-          Saiba como participar do evento que pode mudar a nossa forma de viver
-          nos próximos anos.
-        </p>
-      </Hero>
+      <Hero
+        imgSrc='/images/preserved.webp'
+        title='Saiba como Participar da Hora do Planeta 2021.'
+        description='Saiba como participar do evento que pode mudar a nossa forma de viver
+          nos próximos anos.'
+      />
       <Divider />
-      <HighlightSection bgImgPath="/images/multiple-candles.jpg">
+      <HighlightSection imgSrc='/images/multiple-candles.webp'>
         <h1>Desligue suas luzes.</h1>
         <p>
           Desligue as luzes da sua casa, convença as pessoas ao seu redor a
@@ -35,7 +28,7 @@ export default function index() {
       <Divider />
       <YoutubeLiveSection />
       <Divider />
-      <ReverseHighlight bgImgPath="/images/happiness.jpg">
+      <HighlightSection imgSrc='/images/happiness.webp'>
         <h1>Mude seus hábitos.</h1>
         <p>
           Muito mais do que o festival, nosso movimento busca um mundo melhor,
@@ -44,10 +37,10 @@ export default function index() {
           por isso, veja 10 coisas que podem fazer a diferença no impacto da sua
           pegada ecológica.
         </p>
-        <CtaButton linkTo="/10-coisas-que-podem-ser-feitas">
+        <MainLink linkTo='/10-coisas-que-podem-ser-feitas'>
           Aprender Mais
-        </CtaButton>
-      </ReverseHighlight>
+        </MainLink>
+      </HighlightSection>
     </div>
   );
 }

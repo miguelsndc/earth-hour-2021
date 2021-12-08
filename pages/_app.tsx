@@ -1,14 +1,12 @@
 import '../styles/globals.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/PageFooter';
+
+import { Layout } from '../components/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Navbar />
+    <Layout metaTitle='Hora do Planeta 2021'>
       <Component {...pageProps} />
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 

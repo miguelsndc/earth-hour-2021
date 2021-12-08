@@ -1,26 +1,21 @@
-import Head from 'next/head';
+import { HighlightSection } from '../../components/highlight';
+import { MainLink } from '../../components/main-link';
+import { Divider } from '../../components/divider';
+import { Hero } from '../../components/hero';
 
-import React from 'react';
-
-import HighlightSection from '../../components/HighlightSection';
-import ReverseHighlight from '../../components/Lights';
-import CtaButton from '../../components/CtaButton';
-import Divider from '../../components/Divider';
-import Hero from '../../components/Hero';
+export const config = { amp: true };
 
 export default function Index() {
   return (
     <div>
-      <Head>
-        <title>10 Coisas que podem ser feitas</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Hero bgImgPath="/images/protest.jpg">
-        <h1>10 Coisas que podem ser feitas</h1>
-        <p>10 coisas que você pode fazer para ajudar a salvar nosso planeta.</p>
-      </Hero>
+      <Hero
+        imgSrc='/images/protest.webp'
+        title='10 Coisas que podem ser feitas'
+        description='10 coisas que você pode fazer para ajudar a salvar nosso planeta.'
+      />
+
       <Divider />
-      <HighlightSection bgImgPath="/images/voice.jpg">
+      <HighlightSection imgSrc='/images/voice.webp'>
         <h1>1. Use sua voz.</h1>
         <p>
           Nós somos uma das primeiras gerações a saber que estamos destruindo
@@ -37,7 +32,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/keep-yourself-informed.jpg">
+      <HighlightSection imgSrc='/images/keep-yourself-informed.webp'>
         <h1>2. Mantenha-se informado(a).</h1>
         <p>
           Uma das melhores coisas que você pode fazer é se manter informado -
@@ -49,9 +44,9 @@ export default function Index() {
           influentes e pesquise organizações que estão trabalhando para fazer do
           mundo um lugar melhor.
         </p>
-      </ReverseHighlight>
+      </HighlightSection>
       <Divider />
-      <HighlightSection bgImgPath="/images/politics.jpg">
+      <HighlightSection imgSrc='/images/politics.webp'>
         <h1>3. Seja Politicamente engajado.</h1>
         <p>
           Todas as pessoas acima dos 18 anos podem votar. Essa é uma
@@ -65,7 +60,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/riding-bike.jpg">
+      <HighlightSection imgSrc='/images/riding-bike.webp'>
         <h1>4. Use meios de transporte sustentáveis.</h1>
         <p>
           Transporte é um dos setores mais poluentes. sendo, inquestionavelmente
@@ -75,9 +70,9 @@ export default function Index() {
           puder, escolha uma forma mais sustentável de ir de A até B, usando uma
           bicicleta, ou indo a pé.
         </p>
-      </ReverseHighlight>
+      </HighlightSection>
       <Divider />
-      <HighlightSection bgImgPath="/images/organic.jpg">
+      <HighlightSection imgSrc='/images/organic.webp'>
         <h1>5. Coma de forma sustentável.</h1>
         <p>
           A Produção de alimentos é o pivô da extinção da vida selvagem. O que
@@ -92,7 +87,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/waste.jpg">
+      <HighlightSection imgSrc='/images/waste.webp'>
         <h1>6. Reduza seu desperdício.</h1>
         <p>
           Precisamos tornar o desperdício de nossos recursos inaceitável em
@@ -106,9 +101,9 @@ export default function Index() {
           criativa de reduzir o desperdício, como transformar uma lata velha em
           um vaso de plantas, as possibilidades são infinitas!
         </p>
-      </ReverseHighlight>
+      </HighlightSection>
       <Divider />
-      <HighlightSection bgImgPath="/images/organic.jpg">
+      <HighlightSection imgSrc='/images/organic.webp'>
         <h1>7. Saiba o que está comprando.</h1>
         <p>
           Todos nós podemos fazer mais para ser mais conscientes sobre o que
@@ -122,7 +117,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/ong.jpg">
+      <HighlightSection imgSrc='/images/ong.webp'>
         <h1>8. Doe.</h1>
         <p>
           Existem centenas de organizações não governamentais por todo o mundo
@@ -132,9 +127,9 @@ export default function Index() {
           realizando esse trabalho, então doe, seu suporte será mais do que
           bem-vindo.
         </p>
-      </ReverseHighlight>
+      </HighlightSection>
       <Divider />
-      <HighlightSection bgImgPath="/images/volunteering.jpg">
+      <HighlightSection imgSrc='/images/volunteering.webp'>
         <h1>9. Se Voluntarie.</h1>
         <p>
           Se voluntariar pode ser difícil e caro se você não souber onde
@@ -147,7 +142,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Divider />
-      <ReverseHighlight bgImgPath="/images/earth.jpg">
+      <HighlightSection imgSrc='/images/earth.webp'>
         <h1>10. Participe da Hora do Planeta 2021.</h1>
         <p>
           Esse ano temos uma oportunidade única de mudança, de chamar atenção
@@ -155,8 +150,8 @@ export default function Index() {
           oportunidade, convença seus amigos e família a fazerem parte, seja o
           pivô da mudança no lugar onde você vive.
         </p>
-        <CtaButton linkTo="/como-participar">Participar</CtaButton>
-      </ReverseHighlight>
+        <MainLink linkTo='/como-participar'>Participar</MainLink>
+      </HighlightSection>
     </div>
   );
 }

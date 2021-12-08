@@ -1,27 +1,21 @@
-import Head from 'next/head';
+import { Hero } from '../../components/hero';
+import { TextSection } from '../../components/text-section';
+import { HighlightSection } from '../../components/highlight';
+import { MainLink } from '../../components/main-link';
+import { Divider } from '../../components/divider';
 
-import React from 'react';
-
-import Hero from '../../components/Hero';
-import TextSection from '../../components/TextSection';
-import HighlightSection from '../../components/HighlightSection';
-import CtaButton from '../../components/CtaButton';
-import Divider from '../../components/Divider';
+export const config = { amp: true };
 
 export default function Index() {
   return (
     <div>
-      <Head>
-        <title>Nossa Missão</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Hero bgImgPath={'/images/industry.jpg'}>
-        <h1>Nossa missão</h1>
-        <p>
-          Aprende porquê nós começamos e descubra o porquê da nossa missão. no
-          ano de 2021 suas ações importam mais do que nunca.
-        </p>
-      </Hero>
+      <Hero
+        imgSrc='/images/industry.webp'
+        title='Nossa missão'
+        description='Aprende porquê nós começamos e descubra o porquê da nossa missão. no
+          ano de 2021 suas ações importam mais do que nunca.'
+      />
+
       <TextSection>
         <h1>Nossa História</h1>
         <p>
@@ -55,27 +49,27 @@ export default function Index() {
         </p>
       </TextSection>
       <Divider />
-      <HighlightSection bgImgPath="/images/united-nations.jpg">
+      <HighlightSection imgSrc='/images/united-nations.webp'>
         <h1>2021, O Ano que Importa.</h1>
         <p>
-          2021 representa uma oportunidade imperdível para mudança. Em 2021,
-          Líderes mundiais vão se reunir em conferências globais chave, e fóruns
-          para decidir a agenda ambiental para a próxima década e além. Decisões
+          2021 representa uma oportunidade imperdível para mudança. Líderes
+          mundiais vão se reunir em conferências globais chave, e fóruns para
+          decidir a agenda ambiental para a próxima década e além. Decisões
           políticas cruciais serão feitas, decisões essas que irão afetar
           diretamente o destino da humanidade e do planeta nos próximos anos.
-          Com sua ajuda, a Hora do Planeta 2021 pode se tornar um holofote que
-          colocará as questões ambientais como centro nos debates
-          internacionais. Juntos, podemos falar e mostrar para os líderes
-          globais e outras pessoas importantes que o meio-ambiente importa e
-          ações urgentes devem ser tomadas para reverter as perdas.
+          Com sua ajuda, podemos nos tornar um holofote que colocará as questões
+          ambientais como centro nos debates internacionais. Juntos, podemos
+          mostrar para os líderes globais e outras pessoas que o meio-ambiente
+          importa.
         </p>
-        <CtaButton linkTo="/os-problemas">Aprender Mais </CtaButton>
+        <MainLink linkTo='/os-problemas'>Aprender Mais </MainLink>
       </HighlightSection>
       <Divider />
-      <div className="container" style={{ textAlign: 'center' }}>
+      <div className='container' style={{ textAlign: 'center' }}>
         <h1 style={{ fontSize: '3rem' }}>Junte-se a Nós e Faça a Diferença.</h1>
-        <CtaButton linkTo="/como-participar">Participar</CtaButton>
+        <MainLink linkTo='/como-participar'>Participar</MainLink>
       </div>
+      <Divider />
     </div>
   );
 }

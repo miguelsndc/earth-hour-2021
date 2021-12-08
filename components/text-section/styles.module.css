@@ -1,0 +1,40 @@
+.definition {
+  width: 80%;
+  margin: 0 auto;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.definition h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  margin-bottom: 1rem;
+}
+
+.definition p {
+  display: block;
+  margin: 0.5rem auto;
+  text-indent: 2em;
+  max-width: 120ch;
+  width: 100%;
+}
+
+.definition ul {
+  list-style: circle;
+  width: 100%;
+  max-width: 125ch;
+  padding-left: 2.25rem;
+}
+
+@media screen and (max-width: 983px) {
+  .definition {
+    width: 95%;
+  }
+
+  .definition p {
+    max-width: 100%;
+    width: 100%;
+  }
+}
