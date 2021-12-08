@@ -26,6 +26,7 @@ export const Hero = ({
         layout='fill'
         objectFit='cover'
         priority={true}
+        quality={65}
         className={styles.img}
         alt={alt}
       />
