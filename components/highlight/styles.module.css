@@ -45,6 +45,23 @@
 
 .img {
   border-radius: 8px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(29, 29, 29, 0.5) 40%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    #161616;
+  background-repeat: repeat-y;
+  background-size: 250px 200px;
+  background-position: -70% 0;
+  animation: shine 1.4s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 160% 0, 0 0;
+  }
 }
 
 @media screen and (max-width: 983px) {
@@ -59,6 +76,11 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column-reverse;
+  }
+
+  .img {
+    animation-duration: 1.2s;
+    background-size: 120px 200px;
   }
 
   .rtl {
