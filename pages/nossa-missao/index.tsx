@@ -6,6 +6,8 @@ import {
   Spacer,
 } from '../../components/';
 
+import styles from './styles.module.css';
+
 export default function Index() {
   return (
     <div>
@@ -69,8 +71,8 @@ export default function Index() {
         <MainLink linkTo='/os-problemas'>Aprender Mais </MainLink>
       </HighlightSection>
       <Spacer />
-      <div className='container' style={{ textAlign: 'center' }}>
-        <h1 style={{ fontSize: '3rem' }}>Junte-se a Nós e Faça a Diferença.</h1>
+      <div className={styles.container}>
+        <h1>Junte-se a Nós e Faça a Diferença.</h1>
         <MainLink linkTo='/como-participar'>Participar</MainLink>
       </div>
       <Spacer />
