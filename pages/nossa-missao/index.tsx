@@ -1,9 +1,10 @@
-import { Hero } from '../../components/hero';
-import { TextSection } from '../../components/text-section';
-import { HighlightSection } from '../../components/highlight';
-import { MainLink } from '../../components/main-link';
-import { Divider } from '../../components/divider';
-
+import {
+  Hero,
+  TextSection,
+  HighlightSection,
+  MainLink,
+  Divider,
+} from '../../components/';
 export const config = { amp: true };
 
 export default function Index() {

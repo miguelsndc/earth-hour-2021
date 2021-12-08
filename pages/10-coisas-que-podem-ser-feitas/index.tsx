@@ -1,7 +1,4 @@
-import { HighlightSection } from '../../components/highlight';
-import { MainLink } from '../../components/main-link';
-import { Divider } from '../../components/divider';
-import { Hero } from '../../components/hero';
+import { HighlightSection, Hero, Divider, MainLink } from '../../components';
 
 export const config = { amp: true };
 

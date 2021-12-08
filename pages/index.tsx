@@ -1,9 +1,11 @@
-import { Divider } from '../components/divider';
-import { Hero } from '../components/hero';
-import { HighlightSection } from '../components/highlight';
-import { MainLink } from '../components/main-link';
-import { TextSection } from '../components/text-section';
-import { YoutubeLiveSection } from '../components/live-section';
+import {
+  Divider,
+  Hero,
+  HighlightSection,
+  MainLink,
+  TextSection,
+  YoutubeLiveSection,
+} from '../components/';
 
 export const config = { amp: true };
 
