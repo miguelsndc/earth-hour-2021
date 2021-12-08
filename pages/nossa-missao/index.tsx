@@ -5,7 +5,6 @@ import {
   MainLink,
   Divider,
 } from '../../components/';
-export const config = { amp: true };
 
 export default function Index() {
   return (

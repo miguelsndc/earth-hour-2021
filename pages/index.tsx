@@ -7,8 +7,6 @@ import {
   YoutubeLiveSection,
 } from '../components/';
 
-export const config = { amp: true };
-
 export default function Home() {
   return (
     <div>
