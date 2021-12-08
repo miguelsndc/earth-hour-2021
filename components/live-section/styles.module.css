@@ -25,6 +25,10 @@
   max-width: 50%;
 }
 
+.container button {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 800px) {
   .container p {
     max-width: 100%;
