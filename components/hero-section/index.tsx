@@ -21,7 +21,14 @@ export const Hero = ({
 }: Props) => {
   return (
     <section className={styles.hero}>
-      <img src={imgSrc} className={styles.img} alt={alt} />
+      <Image
+        src={imgSrc}
+        layout='fill'
+        objectFit='cover'
+        priority={true}
+        className={styles.img}
+        alt={alt}
+      />
       <div className={styles.overlay}></div>
       <div className={styles.info}>
         <h1>{title}</h1>
