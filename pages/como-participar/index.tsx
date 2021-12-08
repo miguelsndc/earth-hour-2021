@@ -17,7 +17,6 @@ export default function index() {
         alt='Floresta'
       />
       <Spacer />
-      alt='Pessoa segurando vela'
       <HighlightSection
         imgSrc='/images/multiple-candles.webp'
         alt='Pessoa segurando vela'
