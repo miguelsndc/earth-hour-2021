@@ -1,7 +1,7 @@
 export { Spacer } from './spacer';
 export { PageFooter } from './footer';
 export { Navbar } from './header';
-export { Hero } from './hero';
+export { Hero } from './hero-section';
 export { HighlightSection } from './highlight';
 export { Layout } from './layout';
 export { YoutubeLiveSection } from './live-section';
