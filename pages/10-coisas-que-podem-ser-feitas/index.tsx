@@ -1,4 +1,4 @@
-import { HighlightSection, Hero, Divider, MainLink } from '../../components';
+import { HighlightSection, Hero, Spacer, MainLink } from '../../components';
 
 export default function Index() {
   return (
@@ -9,7 +9,7 @@ export default function Index() {
         description='10 coisas que você pode fazer para ajudar a salvar nosso planeta.'
       />
 
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/voice.webp'>
         <h1>1. Use sua voz.</h1>
         <p>
@@ -26,7 +26,7 @@ export default function Index() {
           todos, e faça sua voz ser ouvida.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/keep-yourself-informed.webp'>
         <h1>2. Mantenha-se informado(a).</h1>
         <p>
@@ -40,7 +40,7 @@ export default function Index() {
           mundo um lugar melhor.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/politics.webp'>
         <h1>3. Seja Politicamente engajado.</h1>
         <p>
@@ -54,7 +54,7 @@ export default function Index() {
           mudança.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/riding-bike.webp'>
         <h1>4. Use meios de transporte sustentáveis.</h1>
         <p>
@@ -66,7 +66,7 @@ export default function Index() {
           bicicleta, ou indo a pé.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/organic.webp'>
         <h1>5. Coma de forma sustentável.</h1>
         <p>
@@ -81,7 +81,7 @@ export default function Index() {
           meio-ambiente, Além de diminuir seus custos com alimentação.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/waste.webp'>
         <h1>6. Reduza seu desperdício.</h1>
         <p>
@@ -97,7 +97,7 @@ export default function Index() {
           um vaso de plantas, as possibilidades são infinitas!
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/organic.webp'>
         <h1>7. Saiba o que está comprando.</h1>
         <p>
@@ -111,7 +111,7 @@ export default function Index() {
           adquirir e produzir de forma sustentável.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/ong.webp'>
         <h1>8. Doe.</h1>
         <p>
@@ -123,7 +123,7 @@ export default function Index() {
           bem-vindo.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/volunteering.webp'>
         <h1>9. Se Voluntarie.</h1>
         <p>
@@ -136,7 +136,7 @@ export default function Index() {
           Se voluntariar é algo recompensador, que faz bem para a alma.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/earth.webp'>
         <h1>10. Participe da Hora do Planeta 2021.</h1>
         <p>

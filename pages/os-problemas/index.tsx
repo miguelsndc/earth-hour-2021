@@ -2,7 +2,7 @@ import {
   HighlightSection,
   TextSection,
   MainLink,
-  Divider,
+  Spacer,
   Hero,
 } from '../../components/';
 
@@ -53,7 +53,7 @@ export default function index() {
           impactos enormes em toda a vida na terra.
         </p>
       </TextSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/polution.webp'>
         <h1>O que causa o Aquecimento Global?</h1>
         <p>
@@ -65,7 +65,7 @@ export default function index() {
           </ul>
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/meltedIce.webp'>
         <h1>Como você pode ajudar ?</h1>
         <p>

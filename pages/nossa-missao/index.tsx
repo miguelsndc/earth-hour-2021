@@ -3,7 +3,7 @@ import {
   TextSection,
   HighlightSection,
   MainLink,
-  Divider,
+  Spacer,
 } from '../../components/';
 
 export default function Index() {
@@ -48,7 +48,7 @@ export default function Index() {
           própria saúde, felicidade, prosperidade e até mesmo sobrevivência.
         </p>
       </TextSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/united-nations.webp'>
         <h1>2021, O Ano que Importa.</h1>
         <p>
@@ -64,12 +64,12 @@ export default function Index() {
         </p>
         <MainLink linkTo='/os-problemas'>Aprender Mais </MainLink>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <div className='container' style={{ textAlign: 'center' }}>
         <h1 style={{ fontSize: '3rem' }}>Junte-se a Nós e Faça a Diferença.</h1>
         <MainLink linkTo='/como-participar'>Participar</MainLink>
       </div>
-      <Divider />
+      <Spacer />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import {
-  Divider,
+  Spacer,
   Hero,
   HighlightSection,
   MainLink,
@@ -34,7 +34,7 @@ export default function Home() {
           do Planeta acontece há 13 anos.
         </p>
       </TextSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/phone.webp'>
         <h1>Participe onde você estiver.</h1>
         <p>
@@ -45,7 +45,7 @@ export default function Home() {
         </p>
         <MainLink linkTo='/nossa-missao'>Ler Mais</MainLink>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/candle.webp' direction='rtl'>
         <h1>Mais do que um apagar de luzes</h1>
         <p>
@@ -55,7 +55,7 @@ export default function Home() {
         </p>
         <MainLink linkTo='/nossa-missao'>Ler Mais</MainLink>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <YoutubeLiveSection />
     </div>
   );

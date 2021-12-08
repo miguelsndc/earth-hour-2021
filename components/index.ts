@@ -1,4 +1,4 @@
-export { Divider } from './divider';
+export { Spacer } from './spacer';
 export { PageFooter } from './footer';
 export { Navbar } from './header';
 export { Hero } from './hero';

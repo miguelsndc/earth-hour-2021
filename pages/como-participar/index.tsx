@@ -1,6 +1,6 @@
 import {
   Hero,
-  Divider,
+  Spacer,
   HighlightSection,
   MainLink,
   YoutubeLiveSection,
@@ -15,7 +15,7 @@ export default function index() {
         description='Saiba como participar do evento que pode mudar a nossa forma de viver
           nos próximos anos.'
       />
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/multiple-candles.webp'>
         <h1>Desligue suas luzes.</h1>
         <p>
@@ -25,9 +25,9 @@ export default function index() {
           objetivo.
         </p>
       </HighlightSection>
-      <Divider />
+      <Spacer />
       <YoutubeLiveSection />
-      <Divider />
+      <Spacer />
       <HighlightSection imgSrc='/images/happiness.webp'>
         <h1>Mude seus hábitos.</h1>
         <p>
