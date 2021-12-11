@@ -52,7 +52,7 @@ This project was developed by me the following technologies:
 ## 📚 What I've learned?
 
 ✔ Multipage Websites with Next.js;<br>
-✔ More about Components - Reusing thems<br>
+✔ More about Components - Reusing them<br>
 ✔ Deploy to vercel via Git repo<br>
 
 ## :rocket: Wanna see it running locally on your machine ?
