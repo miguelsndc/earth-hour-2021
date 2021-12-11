@@ -31,6 +31,7 @@ export default function Index() {
       <HighlightSection
         imgSrc='/images/keep-yourself-informed.webp'
         alt='Homens utilizando celular'
+        reversed
       >
         <h1>2. Mantenha-se informado(a).</h1>
         <p>
@@ -65,6 +66,7 @@ export default function Index() {
       <HighlightSection
         imgSrc='/images/riding-bike.webp'
         alt='Pessoa andando de bicicleta na rua'
+        reversed
       >
         <h1>4. Use meios de transporte sustentáveis.</h1>
         <p>
@@ -95,7 +97,7 @@ export default function Index() {
         </p>
       </HighlightSection>
       <Spacer />
-      <HighlightSection imgSrc='/images/waste.webp' alt='Lixo'>
+      <HighlightSection imgSrc='/images/waste.webp' alt='Lixo' reversed>
         <h1>6. Reduza seu desperdício.</h1>
         <p>
           Precisamos tornar o desperdício de nossos recursos inaceitável em
@@ -131,6 +133,7 @@ export default function Index() {
       <HighlightSection
         imgSrc='/images/ong.webp'
         alt='Homem dando água a elefante'
+        reversed
       >
         <h1>8. Doe.</h1>
         <p>
@@ -162,6 +165,7 @@ export default function Index() {
       <HighlightSection
         imgSrc='/images/earth.webp'
         alt='Foto de satélite da Terra'
+        reversed
       >
         <h1>10. Participe da Hora do Planeta 2021.</h1>
         <p>

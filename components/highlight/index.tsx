@@ -6,20 +6,20 @@ import styles from './styles.module.css';
 type Props = {
   children: ReactNode;
   imgSrc: string;
-  direction?: 'ltr' | 'rtl';
+  reversed?: boolean;
   alt?: string;
 };
 
 export const HighlightSection = ({
   children,
   imgSrc,
-  direction = 'ltr',
+  reversed = false,
   alt,
 }: Props) => {
   return (
     <section className={`${styles.container} `}>
-      <div className={`${direction === 'ltr' ? styles.content : styles.rtl}`}>
-        {direction === 'ltr' && <div className={styles.info}>{children}</div>}
+      <div className={`${!reversed ? styles.content : styles.rtl}`}>
+        {!reversed && <div className={styles.info}>{children}</div>}
         <Image
           src={imgSrc}
           width={1280}
@@ -27,7 +27,7 @@ export const HighlightSection = ({
           className={styles.img}
           alt={alt}
         />
-        {direction === 'rtl' && <div className={styles.info}>{children}</div>}
+        {reversed && <div className={styles.info}>{children}</div>}
       </div>
     </section>
   );
