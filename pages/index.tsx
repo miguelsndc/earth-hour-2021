@@ -50,11 +50,7 @@ export default function Home() {
         <MainLink linkTo='/nossa-missao'>Ler Mais</MainLink>
       </HighlightSection>
       <Spacer />
-      <HighlightSection
-        imgSrc='/images/candle.webp'
-        direction='rtl'
-        alt='Vela acesa'
-      >
+      <HighlightSection imgSrc='/images/candle.webp' alt='Vela acesa' reversed>
         <h1>Mais do que um apagar de luzes</h1>
         <p>
           O Poder da Hora do Planeta vêm das pessoas. Embora as circunstâncias
